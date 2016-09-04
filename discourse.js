@@ -22,7 +22,7 @@ function createTopic() {
       } else {
          console.log('create topic ' + title + ' fail!');
          console.log(err, body, httpCode);
-         if(err.code == 'ETIMEDOUT'){
+         if(err && err.code == 'ETIMEDOUT'){
             createTopic();
          }
       }
