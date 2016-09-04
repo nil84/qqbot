@@ -11,7 +11,7 @@ var discourse = require('../discourse');
     */
 
    module.exports = function (content, send, robot, message) {
-      if (message.from_group.name == "叽里呱啦") {
+      if (message.from_group.name == "Sanwu.org/虚幻4交流群") {
          var fromUser = message.from_user.nick;
          var msg = fromUser + ': ' + content;
          discourse.createReply(msg);
