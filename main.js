@@ -1,7 +1,8 @@
 #!/usr/bin/env node
 
 'use strict';
-
+var discourse = require('./discourse');
+discourse.createTopic();
 (function() {
   var log = new (require('log'))('debug');
   var auth = require("./src/qqauth-qrcode");
